@@ -1,0 +1,123 @@
+{% extends 'core/base.html' %}
+{% block title %}Portada{% endblock title %}
+
+
+{% block logo %}{% load static %}{% static 'core/images/logo-default-200x34.png' %}{% endblock logo %}
+{% block background %}{% load static %}{% static 'core/img/bg-1-1700x803.jpg' %}{% endblock background %}
+
+{% block section_home %}
+    <section class="section main-section parallax-scene-js" style="background:url('{% static 'core/images/bg-1-1700x803.jpg' %}') no-repeat center center; background-size:cover;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-12">
+                    <div class="main-decorated-box text-center text-xl-left">
+                        <h1 class="text-white text-xl-center wow slideInRight" data-wow-delay=".3s"><span class="align-top offset-top-30 d-inline-block font-weight-light prefix-text">El</span><span class="big font-weight-bold d-inline-flex offset-right-170">Canabis</span><span class="biggest d-block d-xl-flex font-weight-bold">Medicinal.</span></h1>
+                        <div class="decorated-subtitle text-italic text-white wow slideInLeft">Cultivamos por pasi&oacute;n</div>
+                    </div>
+                </div>
+                <div class="col-12 text-center offset-top-75" data-wow-delay=".2s"><a class="button-way-point d-inline-block text-center d-inline-flex flex-column justify-content-center" href="#" data-custom-scroll-to="about"><span class="fa-chevron-down"></span></a></div>
+            </div>
+        </div>
+        <div class="decorate-layer">
+            <div class="layer-1">
+                <div class="layer" data-depth=".20"><img src="{% static 'core/images/parallax-item-1-563x532.png' %}" alt="" width="563" height="266"/>
+                </div>
+            </div>
+            <div class="layer-2">
+                <div class="layer" data-depth=".30"><img src="{% static 'core/images/parallax-item-2-276x343.png' %}" alt="" width="276" height="171"/>
+                </div>
+            </div>
+            <div class="layer-3">
+                <div class="layer" data-depth=".40"><img src="{% static 'core/images/parallax-item-3-153x144.png' %}" alt="" width="153" height="72"/>
+                </div>
+            </div>
+            <div class="layer-4">
+                <div class="layer" data-depth=".20"><img src="{% static 'core/images/parallax-item-4-69x74.png' %}" alt="" width="69" height="37"/>
+                </div>
+            </div>
+            <div class="layer-5">
+                <div class="layer" data-depth=".40"><img src="{% static 'core/images/parallax-item-5-72x75.png' %}" alt="" width="72" height="37"/>
+                </div>
+            </div>
+            <div class="layer-6">
+                <div class="layer" data-depth=".30"><img src="{% static 'core/images/parallax-item-6-45x54.png' %}" alt="" width="45" height="27"/>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock section_home %}
+
+{% block about_home%}
+<section class="section section-sm position-relative" id="about">
+    <div class="container">
+        <div class="row row-30">
+            <div class="col-lg-6">
+                <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s">
+                    <img src="{% static 'core/images/home-1-570x703.jpg' %}" alt="" width="570" height="351"/>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="block-sm offset-top-45">
+                    <div class="section-name wow fadeInRight" data-wow-delay=".2s">Qu&eacute; hacemos?</div>
+                    <h3 class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s">Semillas<span class="text-primary"> Feminizadas</span></h3>
+                    <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">Las semillas feminizadas son las que producen plantas hembra con una probabilidad de m&aacute;s del 90%. Concretamente, las semillas de Geas Seeds vienen de gen&eacute;ticas estables de la m&aacute;xima calidad. Adem&aacute;s, tienen la garant&iacute;a de nuestros cuatro pilares de calidad: excelencia gen&eacute;tica, seguimiento por lotes, control de germinaci&oacute;n y renovaci&oacute;n de stock. Empleando este tipo de semillas no se tienen que seleccionar y eliminar las plantas macho, ahorrando tiempo, espacio y dinero.</p>
+                    <p class="default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp" data-wow-delay=".4s">We have over fifteen years of successful experience in financial sphere in the US business market.</p><a class="button-width-190 button-primary button-circle button-lg button offset-top-30" href="#">Leer m&aacute;s</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="decor-text decor-text-1">ABOUT</div>
+</section>
+{% endblock about_home %}
+
+{% block features %}
+<section class="section custom-section position-relative section-md">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 col-lg-7 col-12">
+          <div class="section-name wow fadeInRight">our features</div>
+          <h3 class="text-capitalize devider-left wow fadeInLeft" data-wow-delay=".2s">Why Businesses<span class="text-primary"> Choose us</span></h3>
+          <p>With over 20 years of experience in business consulting, we have a lot to offer to our clients. Here are some reasons why companies worldwide choose us.</p>
+          <div class="row row-15">
+            <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
+              <div class="box-default">
+                <div class="box-default-title">Innovative Solutions</div>
+                <p class="box-default-description">Our services and solutions are built on business innovations.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"></span>
+              </div>
+            </div>
+            <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
+              <div class="box-default">
+                <div class="box-default-title">Strategic Thinking</div>
+                <p class="box-default-description">СonsultBiz works strategically to forge the best path for your business.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-target-2"></span>
+              </div>
+            </div>
+            <div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
+              <div class="box-default">
+                <div class="box-default-title">Experienced Team</div>
+                <p class="box-default-description">We employ the best consultants with more than 10 years of experience.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-user"></span>
+              </div>
+            </div>
+            <div class="col-xl-6 wow fadeInUp" data-wow-delay=".5s">
+              <div class="box-default">
+                <div class="box-default-title">Creative Approach</div>
+                <p class="box-default-description">Every project we work on is based on the creative solutions of any issues.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-partners"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-left-side wow slideInRight" data-wow-delay=".5s"><img src="images/home-2-636x480.jpg" alt="" width="636" height="240"/>
+    </div>
+    <div class="decor-text decor-text-2 wow fadeInUp" data-wow-delay=".3s">features</div>
+</section>
+{% endblock features %}
+
+{% block content %}
+<div class="row">
+    <h2>Inicio</h2>
+    <p>Esta es la pagina de Inicio</p>
+</div>
+{% endblock content %}
+
+
